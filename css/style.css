@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,800;1,200;1,600&display=swap");
+:root {
+	--main-color: #d9d9d9;
+	--light-blue: #4475f2;
+	--dark-blue: #181e4b;
+}
+
+html {
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+
+.flex-between-center {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+body {
+	background: var(--main-color);
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: var(--main-color);
+}
+
+header nav {
+	width: 90%;
+	padding: 10px;
+	z-index: 10;
+}
+
+header div {
+	gap: 10px;
+}
+
+header ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: small;
+	gap: 13px;
+	box-shadow: 1px 1px 1px var(--dark-blue);
+	border-radius: 10px;
+	padding: 10px;
+    color: var(--dark-blue);
+}
+
+header li {
+	padding: 5px 10px;
+	border-radius: 30px;
+}
+
+header a {
+	text-decoration: none;
+	font-size: 15px;
+	color: var(--light-blue);
+}
+
+#btn-menu {
+	cursor: pointer;
+	display: none;
+}
+
+.toggle-menu {
+	display: block;
+}
+
+/* main section */
+
+/* hero */
+#hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#hero {
+	display: flex;
+}
+
+#hero div h1 {
+	font-size: 70px;
+	color: var(--dark-blue);
+}
+
+#hero div h1 b {
+	color: var(--light-blue);
+}
+
+#hero p {
+	font-size: small;
+	margin-top: -50px;
+	color: #555;
+	margin-bottom: 30px;
+}
+
+#hero span {
+	background: var(--light-blue);
+	color: #fff;
+	padding: 15px 30px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px var(--dark-blue);
+}
+
+/* section destinasi favorite */
+#destinasi-favorite h1 {
+	font-size: 30px;
+	margin-left: 30px;
+	color: var(--dark-blue);
+}
+
+#destinasi-favorite div {
+	display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+#destinasi-favorite div img{
+    width: 33.33%;
+}
+
+/* section cari tempat wisata */
+#cari-tempat {
+    display: flex;
+    flex-direction: column;
+	margin-top: 100px;
+	text-align: center;
+}
+
+#cari-tempat h5 {
+	color: var(--dark-blue);
+}
+
+#cari-tempat > p {
+	font-size: 13px;
+}
+
+#article-cari-tempat {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 5px;
+	margin-top: 20px;
+}
+
+footer {
+	text-align: center;
+	background: var(--light-blue);
+	padding: 15px;
+	color: #fff;
+	border-radius: 10px 10px 0 0;
+}
+footer a {
+	color: #fff;
+}
+@media screen and (max-width: 600px) {
+	header ul {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50%;
+		margin-top: 50px;
+		background: var(--light-blue);
+		padding: 20px 40px;
+	}
+
+     header ul a {
+        color: #fff;
+		font-size: 20px;
+     }
+
+	#hero {
+		flex-direction: column-reverse;
+		margin-top: 40px;
+	}
+
+	#hero img {
+		width: 100%;
+	}
+
+	#hero div h1 {
+		font-size: 30px;
+	}
+
+	#hero p {
+		margin-top: 1px;
+	}
+
+	#hero span {
+		font-size: small;
+        padding: 10px;
+	}
+
+    #destinasi-favorite {
+        margin-top: 40px;
+    }
+    #destinasi-favorite h1 {
+        font-size: 15px;
+    }
+
+	#article-cari-tempat {
+		flex-direction: column;
+	}
+
+	footer {
+		font-size: small;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#btn-menu {
+		display: block;
+	}
+	
+	header ul {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50%;
+		margin-top: 50px;
+		background: var(--light-blue);
+		padding: 20px 40px;
+	}
+
+
+     header ul a {
+        color: #fff;
+     }
+
+	 #hero {
+		flex-direction: column-reverse;
+	 }
+
+}
