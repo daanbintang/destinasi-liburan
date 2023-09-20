@@ -31,17 +31,16 @@ header {
 	width: 100%;
 	top: 0;
 	left: 0;
-	background: var(--main-color);
-}
-
-header nav {
-	width: 90%;
-	padding: 10px;
-	z-index: 10;
+	background: var(--light-blue);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #fff;
+	border-radius: 0 0 30px 30px;
 }
 
 header div {
-	gap: 10px;
+	gap: 8px;
 }
 
 header ul {
@@ -51,10 +50,8 @@ header ul {
 	align-items: center;
 	font-size: small;
 	gap: 13px;
-	box-shadow: 1px 1px 1px var(--dark-blue);
 	border-radius: 10px;
 	padding: 10px;
-    color: var(--dark-blue);
 }
 
 header li {
@@ -65,7 +62,7 @@ header li {
 header a {
 	text-decoration: none;
 	font-size: 15px;
-	color: var(--light-blue);
+	color: #fff;
 }
 
 #btn-menu {
@@ -117,18 +114,29 @@ header a {
 /* section destinasi favorite */
 #destinasi-favorite h1 {
 	font-size: 30px;
-	margin-left: 30px;
 	color: var(--dark-blue);
+	text-align: center;
 }
 
-#destinasi-favorite div {
+#article-destinasi-favorite {
 	display: flex;
-    justify-content: center;
-    gap: 5px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
-#destinasi-favorite div img{
-    width: 33.33%;
+#article-destinasi-favorite article {
+	width: 40%;
+}
+
+#article-destinasi-favorite p {
+	font-size: 10px;
+	width: 80%;
+	margin: auto;
+}
+
+#destinasi-favorite article img {
+	width: 80%;
 }
 
 /* section cari tempat wisata */
@@ -167,6 +175,10 @@ footer a {
 	color: #fff;
 }
 @media screen and (max-width: 600px) {
+	header h1 {
+		font-size: small;
+	}
+
 	header ul {
 		display: none;
 		flex-direction: column;
@@ -181,7 +193,7 @@ footer a {
 
      header ul a {
         color: #fff;
-		font-size: 20px;
+		font-size: small;
      }
 
 	#hero {
@@ -226,6 +238,10 @@ footer a {
 	#btn-menu {
 		display: block;
 	}
+
+	header div h1 {
+		font-size: small;
+	}
 	
 	header ul {
 		display: none;
@@ -248,4 +264,11 @@ footer a {
 		flex-direction: column-reverse;
 	 }
 
+	 #article-destinasi-favorite {
+		flex-direction: column;
+	 }
+	
+	 #article-destinasi-favorite article {
+		width: 100%;
+	 }
 }
