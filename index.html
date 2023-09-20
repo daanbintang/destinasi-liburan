@@ -4,44 +4,82 @@
 		<title>destinize</title>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+		<link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
 		<link href="css/style.css" rel="stylesheet" />
 	</head>
 	<body>
 		<header>
 			<h1>destinize</h1>
-			<nav class="flex-between-center">
+			<nav
+				class="flex-between-center"
+				role="navigation"
+				aria-label="Menu Navigasi"
+			>
 				<ul id="list-menu">
 					<li><a href="#">Home</a></li>
-					<li><a href="#destinasi-favorite">Destinasi Favorite</a></li>
+					<li>
+						<a href="#destinasi-favorite">Destinasi Favorite</a>
+					</li>
 					<li><a href="#cari-tempat">Cari Tempat Wisata</a></li>
 				</ul>
-				<span id="btn-menu">
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-					<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-				</svg>
-				</span>
+				<header>
+					<h1>destinize</h1>
+					<nav
+						class="flex-between-center"
+						role="navigation"
+						aria-label="Menu Navigasi"
+					>
+						<ul id="list-menu">
+							<li><a href="#">Home</a></li>
+							<li>
+								<a href="#destinasi-favorite"
+									>Destinasi Favorite</a
+								>
+							</li>
+							<li>
+								<a href="#cari-tempat">Cari Tempat Wisata</a>
+							</li>
+						</ul>
+						<span id="btn-menu">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-list"
+								viewBox="0 0 16 16"
+								alt="Toggle Menu"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+								/>
+							</svg>
+						</span>
+					</nav>
+				</header>
 			</nav>
 		</header>
 
 		<main class="container">
 			<section id="hero">
 				<aside>
-					<img src="assets/hero.png" alt="hero">
+					<img src="assets/hero.png" alt="hero" />
 				</aside>
 				<div>
 					<h1>
 						Liburan & nikmati
-						<b>tempat baru</b> di
-						Indonesia
+						<b>tempat baru</b> di Indonesia
 					</h1>
 					<p>
-						Destinize membuat kamu selalu update terkait tempat liburan baru di Indonesia dengan mengikuti perkembangan para influencer di sosial media ✨
+						Destinize membuat kamu selalu update terkait tempat
+						liburan baru di Indonesia dengan mengikuti perkembangan
+						para influencer di sosial media ✨
 					</p>
 					<span>Mulai sekarang!</span>
 				</div>
 			</section>
-		
+
 			<section id="destinasi-favorite">
 				<h1>Temukan Destinasi Favoritmu</h1>
 				<div id="article-destinasi-favorite"></div>
@@ -51,15 +89,20 @@
 				<h5>CARI TEMPAT WISATA</h5>
 				<h1>Cari Tempat Wisata Didekatmu</h1>
 				<p>
-					Fitur ini memungkinkan kamu untuk mencari tempat wisata atau tempat yang sedang populer di daerah kamu dengan begitu kamu akan selalu update dan gak kudet lagi 👍🏻
+					Fitur ini memungkinkan kamu untuk mencari tempat wisata atau
+					tempat yang sedang populer di daerah kamu dengan begitu kamu
+					akan selalu update dan gak kudet lagi 👍🏻
 				</p>
-				<img src="assets/peta.png" alt="peta">
-				<div id="article-cari-tempat">
+				<img src="assets/peta.png" alt="peta" />
+				<div id="article-cari-tempat"></div>
 			</section>
 		</main>
 
 		<footer>
-			<section>This web is created by <a href="https://github.com/daanbintang">daanbintang</a></section>
+			<section>
+				This web is created by
+				<a href="https://github.com/daanbintang">daanbintang</a>
+			</section>
 		</footer>
 
 		<script src="js/script.js"></script>
